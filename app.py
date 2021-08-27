@@ -25,18 +25,18 @@ def animate(i):
         for j in range(square_num_y):
             temp = numpy.round(numpy.mean(numpy_frame[i*len_x:(i+1)*len_x, j*len_y:(j+1)*len_y], axis=(0, 1)))
             part_array[i, j] = temp
-
+    
+    # Insert mean
     for r in range(square_num_x):
         for k in range(square_num_y):
-            for i in range(r*len_x, (r+1)*len_x):
-                for j in range(k*len_y, (k+1)*len_y):
-                    numpy_frame[i, j] = part_array[r][k]
+            numpy_frame[r*len_x:(r+1)*len_x, k*len_y:(k+1)*len_y] = part_array[r, k]
+
     plt.clf()
     plt.imshow(numpy_frame)
     end = time.perf_counter()
-    print(end - start)
+    print("Time: " ,end - start, "Seconds")
 
 anim = animation.FuncAnimation(fig, animate,
-                               interval=100)
+                               interval=2000)
 
 plt.show()
