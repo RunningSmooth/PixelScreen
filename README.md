@@ -1,5 +1,13 @@
 # PixelScreen
 
+![Pixel_Demo](pixel_demo.JPG)
+![Original_Demo](original_demo.JPG)
+Example images. The side-lengths of the squares were set to 10 pixels. The original image was taken in [Battlefield V](https://www.ea.com/de-de/games/battlefield/battlefield-5).
+
+## Author
+
+- [Tobias Pitsch](https://github.com/RunningSmooth)
+
 ## Used technologies / Frameworks
 
 I use the following technologies / frameworks in my project:

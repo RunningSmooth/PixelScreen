@@ -8,7 +8,7 @@ screen_size = (1920, 1080)
 
 # common divisors for screen-size (1980, 1080): 
 # 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120   -> values for square_side_length
-square_side_length = 40
+square_side_length = 10
 
 # Calculating how many squares are needed in each axial direction.
 square_num_x = int(1920 / square_side_length)
